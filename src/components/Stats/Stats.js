@@ -6,7 +6,7 @@ import getRandomColor from './randomColor';
 const Stats = ({ title = '', stats = [] }) => {
   return (
     <section className={styles.statsSection}>
-      {title !== '' ? <h2 className={styles.title}>{title}</h2> : null}
+      {title && <h2 className={styles.title}>{title}</h2>}
       <ul className={styles.statList}>
         {stats.map(item => (
           <li
